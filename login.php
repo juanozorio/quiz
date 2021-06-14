@@ -10,15 +10,16 @@
 </head>
 
   <body class="text-center">
-    <form class="form-signin">
-      <img src="../site/img/logo.jpg" width="70px" height="70px">
+    <form action="autenticacao.php" class="form-signin" method="POST">
+      <img src="img/logo.jpg" width="70px" height="70px">
       <h1 class="h3 mb-3 font-weight-normal">Faça login</h1>
-
-        <label for="inputEmail" class="sr-only">Endereço de email</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Seu email" required autofocus>
+      
+        <label for="inputEmail" class="sr-only">Usuário</label>
+        <input name="login" id="inputEmail" class="form-control" placeholder="Seu Usuário">
 
         <label for="inputPassword" class="sr-only">Senha</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+        <input name="senha" type="password" id="inputPassword" class="form-control" placeholder="Senha">
+
       <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
     </form>
   </body>

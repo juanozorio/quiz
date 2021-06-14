@@ -8,7 +8,7 @@
     <link href="css/cadastro.css" rel="stylesheet">
   </head>
   <body>
-    <form class="form-signin">
+    <form class="form-signin" method="$_POST">
       <div class="text-center mb-4">
         <img src="img/logo.jpg" width="70" height="70">
         <h1 class="h3 mb-3 font-weight-normal">Realize o seu cadastro !</h1>
