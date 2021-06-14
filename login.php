@@ -20,7 +20,7 @@
         <label for="inputPassword" class="sr-only">Senha</label>
         <input name="senha" type="password" id="inputPassword" class="form-control" placeholder="Senha">
 
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+      <input type="submit" class="btn btn-lg btn-primary btn-block" value="Login"></button>
     </form>
   </body>
 </html>
