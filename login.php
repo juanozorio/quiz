@@ -15,10 +15,10 @@
       <h1 class="h3 mb-3 font-weight-normal">Faça login</h1>
       
         <label for="inputEmail" class="sr-only">Usuário</label>
-        <input name="login" id="inputEmail" class="form-control" placeholder="Seu Usuário">
+        <input name="login" id="inputEmail" class="form-control" placeholder="Seu Usuário" required>
 
         <label for="inputPassword" class="sr-only">Senha</label>
-        <input name="senha" type="password" id="inputPassword" class="form-control" placeholder="Senha">
+        <input name="senha" type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
 
       <input type="submit" class="btn btn-lg btn-primary btn-block" value="Login"></button>
     </form>

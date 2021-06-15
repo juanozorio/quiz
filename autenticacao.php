@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('conexao.php');
 
 $login = mysqli_real_escape_string($conexao, $_POST['login']);
@@ -13,7 +14,7 @@ $row = mysqli_num_rows($result);
 
 if($row == 1) {
 	$_SESSION['usuario'] = $usuario;
-	header('Location: questao.php');
+	header('Location: home.php');
 	exit();
 } else {
 	$_SESSION['nao_autenticado'] = true;
