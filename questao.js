@@ -1,6 +1,7 @@
+
 var myQuestions = [
 	{
-		question: "Quando surgiu a primeira placa mae?",
+		question: "Quando surgiu a primeira placa mãe?",
 		answers: {
 			a: '1985',
 			b: '1952',
@@ -11,7 +12,9 @@ var myQuestions = [
 	},
 	{
 		question: "Qual desses nomes foi o fundador da Microsoft?",
-		answers: {
+		answers:
+		
+		{
 			a: 'Bill Guetes',
 			b: 'Martin Lutter King',
 			c: 'Steve Jobs',
@@ -20,7 +23,7 @@ var myQuestions = [
 		correctAnswer: 'd'
 	},
 	{
-		question: "Qual desses nomes foi o fundador da Ipple?",
+		question: "Qual desses nomes foi o fundador da Apple?",
 		answers: {
 			a: 'Michael Jackson',
 			b: 'Ronald Wayne',
@@ -48,7 +51,38 @@ var myQuestions = [
 			d: '1000'
 		},
 		correctAnswer: 'b'
-	}
+	},
+	{
+		question: "Qual é o logo na Apple?",
+		answers: {
+			a: 'Banana',
+			b: 'Coelho',
+            c: 'Cenoura',
+            d: 'Maçã',
+		},
+		correctAnswer: 'd'
+	},
+	{
+		question: "Qual comando é usado para escrever na tela em php?",
+		answers: {
+			a: 'Echo',
+			b: 'Console.log',
+            c: 'main public static void main(String[] args) ',
+            d: 'printf(“”);',
+		},
+		correctAnswer: 'a'
+	},
+	{
+		question: "Qual o significado de T.I?",
+		answers: {
+			a: 'Information Technology',
+			b: 'Tecnologia Interativa',
+            c: 'Tecnologia inteligência',
+            d: 'Informando a Tecnologia'
+		},
+		correctAnswer: 'a'
+	},
+	
 ];
 
 var quizContainer = document.getElementById('quiz');
@@ -137,4 +171,5 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 	submitButton.onclick = function(){
 		showResults(questions, quizContainer, resultsContainer);
 	}
+	
 }

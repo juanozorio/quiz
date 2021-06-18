@@ -16,12 +16,12 @@
       </div>
 
       <div class="form-label-group">
-        <input type="nome" id="inputNome" class="form-control" placeholder="Nome Completo" required autofocus>
-        <label for="inputEmail">Nome Completo</label>
+        <input type="name" id="inputNome" class="form-control" placeholder="Nome" required>
+        <label for="inputPassword">Nome</label>
       </div>
 
       <div class="form-label-group">
-            <input type="email" id="inputEmail" class="form-control" placeholder="Endereço de email" required autofocus>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Endereço de email" required>
             <label for="inputEmail">Endereço de email</label>
         </div>
 

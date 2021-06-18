@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,7 +11,6 @@
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="css/login.css" rel="stylesheet">
 </head>
-
   <body class="text-center">
     <form action="autenticacao.php" class="form-signin" method="POST">
       <img src="img/logo.jpg" width="70px" height="70px">

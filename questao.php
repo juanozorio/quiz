@@ -1,6 +1,5 @@
 <?php
-session_start();
-print_r($_SESSION);exit;
+include 'verifica_login.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -14,9 +13,8 @@ print_r($_SESSION);exit;
 <body>
     <div id="quiz"></div>
 		<button id="submit">Mostrar Resultado</button>
-		<div id="results"></div>		
+		<div id="results"></div>
 </body>
 </html>
-
-
 <script src="questao.js"></script>
+

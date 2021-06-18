@@ -11,6 +11,12 @@ $result = mysqli_query($conexao, $query);
  
 $row = mysqli_num_rows($result);
 
+echo $row;
+
+$usuario = "";
+while($rows = mysqli_fetch_assoc($result)) {
+	$usuario = $rows['nome'];
+}
 
 if($row == 1) {
 	$_SESSION['usuario'] = $usuario;
@@ -21,3 +27,4 @@ if($row == 1) {
 	header('Location: login.php');
 	exit();
 }
+?>
