@@ -16,6 +16,7 @@ echo $row;
 $usuario = "";
 while($rows = mysqli_fetch_assoc($result)) {
 	$usuario = $rows['nome'];
+	echo $usuario;
 }
 
 if($row == 1) {

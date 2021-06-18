@@ -8,7 +8,7 @@
     <link href="css/cadastro.css" rel="stylesheet">
   </head>
   <body>
-    <form class="form-signin" method="$_POST">
+    <form action="cadastrar.php" class="form-signin" method="POST">
       <div class="text-center mb-4">
         <img src="img/logo.jpg" width="70" height="70">
         <h1 class="h3 mb-3 font-weight-normal">Realize o seu cadastro !</h1>
@@ -16,17 +16,17 @@
       </div>
 
       <div class="form-label-group">
-        <input type="name" id="inputNome" class="form-control" placeholder="Nome" required>
+        <input type="name" name="nome" id="inputPassword" class="form-control" placeholder="Nome Completo" required>
         <label for="inputPassword">Nome</label>
       </div>
 
       <div class="form-label-group">
-            <input type="email" id="inputEmail" class="form-control" placeholder="Endereço de email" required>
-            <label for="inputEmail">Endereço de email</label>
+            <input type="usuario" name="usuario" id="inputPassword" class="form-control" placeholder="Escolha um usuário" required>
+            <label for="inputPassword">Usuário</label>
         </div>
 
       <div class="form-label-group">
-        <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+        <input type="senha" name="senha" id="inputPassword" class="form-control" placeholder="Senha" required>
         <label for="inputPassword">Senha</label>
       </div>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
