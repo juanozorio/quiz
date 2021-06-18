@@ -1,3 +1,6 @@
+<?php
+include 'verifica_login.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -10,9 +13,8 @@
 <body>
     <div id="quiz"></div>
 		<button id="submit">Mostrar Resultado</button>
-		<div id="results"></div>		
+		<div id="results"></div>
 </body>
 </html>
-
-
 <script src="questao.js"></script>
+
