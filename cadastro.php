@@ -16,20 +16,21 @@
       </div>
 
       <div class="form-label-group">
-        <input type="name" name="nome" id="inputPassword" class="form-control" placeholder="Nome Completo" required>
+        <input type="name" name="nome" id="inputPassword" class="form-control" placeholder="Nome" maxlength="20" required>
         <label for="inputPassword">Nome</label>
       </div>
 
       <div class="form-label-group">
-            <input type="usuario" name="usuario" id="inputPassword" class="form-control" placeholder="Escolha um usuário" required>
-            <label for="inputPassword">Usuário</label>
+            <input type="email" name="email" id="inputPassword" class="form-control" placeholder="Informe seu Email" maxlength="50" required>
+            <label for="inputPassword">E-mail</label>
         </div>
 
       <div class="form-label-group">
-        <input type="senha" name="senha" id="inputPassword" class="form-control" placeholder="Senha" required>
+        <input type="senha" name="senha" id="inputPassword" class="form-control" placeholder="Senha" maxlength="32" required>
         <label for="inputPassword">Senha</label>
       </div>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+      <a href="login.php"><strong> Se tiver cadastro, volte para a página de Login !</strong></a>
     </form>
   </body>
 </html>

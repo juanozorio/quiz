@@ -8,6 +8,7 @@ include 'verifica_login.php';
 </head>
 <body>
 <h2>Olá,<?php echo $_SESSION['usuario'];?></h2>
+
 <h2><a href="logout.php">Sair</h2>
 </body>
 </html>

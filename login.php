@@ -13,8 +13,19 @@ session_start();
 </head>
   <body class="text-center">
     <form action="autenticacao.php" class="form-signin" method="POST">
+    <?php
+      if(isset($_SESSION['nao_autenticado'])):
+    ?>
+    <div class="alert alert-danger" role="alert" >
+      ERRO: Usuário ou Senha incorretos.
+    </div>
+    <?php
+      endif;
+      unset($_SESSION['nao_autenticado']);
+    ?>
+
       <img src="img/logo.jpg" width="70px" height="70px">
-      <h1 class="h3 mb-3 font-weight-normal">Faça login</h1>
+      <h1 class="h3 mb-3 font-weight-normal"><strong>Realize seu login</strong></h1>
       
         <label for="inputEmail" class="sr-only">Usuário</label>
         <input name="login" id="inputEmail" class="form-control" placeholder="Seu Usuário" required>
@@ -23,6 +34,7 @@ session_start();
         <input name="senha" type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
 
       <input type="submit" class="btn btn-lg btn-primary btn-block" value="Login"></button>
+      <a href="cadastro.php"><strong>Se você não tiver cadastro, clique aqui!</strong></a>
     </form>
   </body>
 </html>
