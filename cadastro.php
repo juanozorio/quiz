@@ -12,7 +12,7 @@
       <div class="text-center mb-4">
         <img src="img/logo.jpg" width="70" height="70">
         <h1 class="h3 mb-3 font-weight-normal">Realize o seu cadastro !</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, doloremque. Fuga, ipsa? Voluptates ad velit nisi possimus temporibus culpa dignissimos sunt minima unde aut rem, error impedit accusantium qui delectus.</p>
+        <p>Faça o seu cadastro, para poder ter acesso a todo conteúdo da plataforma !</p>
       </div>
 
       <div class="form-label-group">
@@ -26,7 +26,7 @@
         </div>
 
       <div class="form-label-group">
-        <input type="senha" name="senha" id="inputPassword" class="form-control" placeholder="Senha" maxlength="32" required>
+        <input type="password" name="senha" id="inputPassword" class="form-control" placeholder="Senha" maxlength="32" required>
         <label for="inputPassword">Senha</label>
       </div>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
